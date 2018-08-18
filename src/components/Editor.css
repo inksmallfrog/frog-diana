@@ -1,0 +1,37 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.wrapper.fullscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.fixedWrapper{
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+}
+.fullscreen .fixedWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-nu{
+    min-width: 1rem;
+    user-select: none;
+    text-align: right;
+}
+
+.editor{
+    flex-grow: 1;
+    text-align: left;
+}
+.editor:focus{
+    outline: none;
+    border: none;
+}
